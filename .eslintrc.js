@@ -1,4 +1,5 @@
 module.exports = {
+    root: true,
     parser: '@typescript-eslint/parser',
     settings: {
         react: {
@@ -16,5 +17,7 @@ module.exports = {
     rules: {
         // Overwrite rules specified from the extended configs e.g. 
         "@typescript-eslint/explicit-function-return-type": "off",
+        "indent": ["error", 2],
+        "max-len": ["error", 110, 2, { "ignoreComments": true }]
     }
 }
